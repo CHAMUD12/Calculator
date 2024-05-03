@@ -1,0 +1,53 @@
+
+        input[type="button"] {
+            background-color: rgb(160, 143, 175);
+            padding: 40px 50px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #cal{
+            margin-right: auto;
+            margin-left: auto;
+            border: 2px solid black;
+        }
+        input[type="text"]{
+            background-color: rgb(222, 223, 160);
+            width: 100%;
+            height: 120px;
+            font-size: 25px; 
+            font-weight: bold;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .numbers:hover {
+            background-color: rgb(148, 148, 226);
+        }
+        .oparator:hover {
+            background-color: rgb(230, 158, 158);
+        }
+        
+
+        @media screen and (max-width: 600px) {
+            input[type="button"] {
+                padding: 15px 20px;
+            }
+            input[type="number"] {
+                height: 60px;
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            input[type="button"] {
+                padding: 10px 15px;
+            }
+            input[type="number"] {
+                height: 50px;
+                font-size: 18px;
+            }
+        }
