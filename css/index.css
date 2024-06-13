@@ -1,53 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
-        input[type="button"] {
-            background-color: rgb(160, 143, 175);
-            padding: 40px 50px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        #cal{
-            margin-right: auto;
-            margin-left: auto;
-            border: 2px solid black;
-        }
-        input[type="text"]{
-            background-color: rgb(222, 223, 160);
-            width: 100%;
-            height: 120px;
-            font-size: 25px; 
-            font-weight: bold;
-            border: none;
-            box-sizing: border-box;
-            border-radius: 5px;
-        }
+#cal {
+  margin: 40px auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px; 
+  width: 400px; 
+  background-color: #fff;
 
-        .numbers:hover {
-            background-color: rgb(148, 148, 226);
-        }
-        .oparator:hover {
-            background-color: rgb(230, 158, 158);
-        }
-        
+  background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+  background-origin: border-box;
+  border: 1px solid #ddd;
+  border-image: linear-gradient(to bottom, #ccc, #fff) 1;
+}
 
-        @media screen and (max-width: 600px) {
-            input[type="button"] {
-                padding: 15px 20px;
-            }
-            input[type="number"] {
-                height: 60px;
-                font-size: 20px;
-            }
-        }
+input[type="button"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px 25px; 
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-        @media screen and (max-width: 400px) {
-            input[type="button"] {
-                padding: 10px 15px;
-            }
-            input[type="number"] {
-                height: 50px;
-                font-size: 18px;
-            }
-        }
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+input[type="text"] {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 80px;
+  font-size: 35px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px; 
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.numbers {
+  background-color: #66D9EF;
+}
+
+.numbers:hover {
+  background-color: #44C9E4;
+}
+
+.oparator {
+  background-color: #FFC107;
+}
+
+.oparator:hover {
+  background-color: #FFA07A;
+}
+
+@media screen and (max-width: 600px) {
+  #cal {
+    width: 350px; 
+  }
+  input[type="button"] {
+    padding: 15px 20px; 
+  }
+  input[type="text"] {
+    height: 70px;
+    font-size: 30px; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #cal {
+    width: 300px;
+  }
+  input[type="button"] {
+    padding: 12px 18px; 
+  }
+  input[type="text"] {
+    height: 60px;
+    font-size: 25px; 
+  }
+}
